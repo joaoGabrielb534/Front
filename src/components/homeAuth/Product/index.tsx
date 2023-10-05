@@ -12,9 +12,9 @@ export function Product(data: ProductProps) {
 
   return (
     <div className="flex h-full w-full flex-col gap-2 rounded-md border border-gray-400/20 px-4 py-4 shadow-lg">
-      <div className='flex justify-end'>
+      {data.precoPromocao && (<div className='flex justify-end'>
         <span className='text-green-500 text-lg'>{promotion.toFixed(0)}% de desconto</span>
-      </div>
+      </div>)}
       <div className="flex items-center justify-center">
         <Image
           src={
